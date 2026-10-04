@@ -934,6 +934,20 @@ target="_blank">
 </div>
 
 </footer>
+  <script>
+function welcomeSound() {
+    const speech = new SpeechSynthesisUtterance(
+        "Welcome to Art by Cheema. Thank you for visiting our website."
+    );
+
+    speech.lang = "en-US";
+    speech.rate = 0.9;
+    speech.pitch = 1;
+
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(speech);
+}
+  </script>
 
 </body>
   </html>
